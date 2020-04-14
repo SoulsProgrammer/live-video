@@ -1,0 +1,90 @@
+/*确认框*/
+.confirm-modal {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.2);
+
+}
+
+.confirm-box {
+    padding: 30px 50px;
+    width: 400px;
+    height: 200px;
+    margin: 0 auto;
+    background: #fefefe;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    overflow-y: auto;
+    overflow: hidden;
+    color: #5d5d5d
+
+}
+
+.confirm-box .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    font-size: 28px;
+    color: #5d5d5d
+
+}
+
+.confirm-box .buttons div {
+    border: 1px solid #5d5d5d;
+    border-radius: 10px;
+    height: 50px;
+    padding: 10px 20px;
+    line-height: 50px;
+    width: 25%;
+}
+
+.confirm-box .buttons div:active {
+    background: #eee;
+}
+
+.fade-enter-active, .fade-leave-active {
+    transition: all 0.5s;
+}
+
+.fade-enter, .fade-leave-to { /* .fade-leave-active below version 2.1.8 */
+    transform: translateY(100%);
+    opacity: 1;
+}
+
+.scale-enter, .scale-leave-to {
+    transform: scale(0)
+}
+
+.scale-leave, .scale-enter-to {
+    transform: scale(2)
+}
+
+.scale-enter-active, .scale-leave-active {
+    transition: all 5s
+}
+
+/** 请求等待*/
+.showLoading {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+.showLoading-icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 60px;
+    transform: translate(-50%, -50%);
+}
